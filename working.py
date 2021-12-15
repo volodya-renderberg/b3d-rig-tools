@@ -6,6 +6,14 @@ import os
 
 import bpy
 
+
+def many_objects_push_position_and_actions(context) -> tuple:
+    """Записывает в файл положение и название анимационного экшена для всех выделенных объектов.
+    Сохраняет данные в словарь по именам объектов.
+
+    """
+    pass
+
 def push_position_and_action(context) -> tuple:
     """Записывает в файл положение и название анимационного экшена выделенного объекта. """
 

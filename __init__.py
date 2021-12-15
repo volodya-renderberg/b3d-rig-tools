@@ -8,7 +8,7 @@ bl_info = {
     "description": "Other toolsa.",
     "author": "Volodya Renderberg",
     "version": (1, 0),
-    "blender": (2, 9, 0),
+    "blender": (2, 93, 6),
     "location": "View3d tools panel",
     "warning": "", # used for warning icon and text in addons panel
     "doc_url":"",
