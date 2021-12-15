@@ -91,6 +91,25 @@ def pull_position_and_action(context) -> tuple:
     return(True, "Ok!")
 
 
+def pull_position_to_edit_bone(context) -> tuple:
+    """Считывает из файла параметры положения и применяет к 
+    выделенной кости в режиме Edit Mode. """
+
+    ob=context.object
+
+    path=os.path.join(tempfile.gettempdir(), 'saving_object_data.json')
+    if not os.path.exists(path):
+        return(False, "data file not found")
+    
+    with open(path, 'r') as f:
+        data= json.load(f)
+        
+    print(data)
+
+
+    return(True, "Ok!")
+
+
 def pull_child_offs(context) -> tuple:
     """Считывает из файла параметры **CHILD_OF** констрейнов и применяет к 
     **root** кости выделенного рига. """
